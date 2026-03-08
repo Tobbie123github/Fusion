@@ -830,7 +830,7 @@ export default function ProductDetail() {
               </motion.button>
 
               {/* Trust badges */}
-              <div className="mt-8 grid grid-cols-2 gap-3">
+              {/* <div className="mt-8 grid grid-cols-2 gap-3">
                 {[
                   ["🚚", "Free Shipping", "Orders over $150"],
                   ["↩️", "Easy Returns", "30 days, no questions"],
@@ -867,7 +867,7 @@ export default function ProductDetail() {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
