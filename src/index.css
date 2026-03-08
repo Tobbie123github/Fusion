@@ -29,10 +29,12 @@
   body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.4s ease, color 0.3s ease;
+    transition:
+      background-color 0.4s ease,
+      color 0.3s ease;
     overflow-x: hidden;
   }
 
@@ -47,7 +49,9 @@
     border-radius: 3px;
   }
 
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     outline: none;
     font-family: inherit;
   }
@@ -64,13 +68,17 @@
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @layer utilities {
   .font-serif {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
   }
 }
 
@@ -129,27 +137,54 @@
 
 /* Animations */
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes slideInRight {
-  from { opacity: 0; transform: translateX(20px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 @keyframes pulse-line {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 0.7; }
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
 }
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .animate-fade-up {
@@ -166,15 +201,30 @@
 }
 
 /* Staggered delays */
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-500 { animation-delay: 0.5s; }
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}
 
 /* Skeleton shimmer */
 .skeleton {
-  background: linear-gradient(90deg, var(--surface) 25%, var(--card) 50%, var(--surface) 75%);
+  background: linear-gradient(
+    90deg,
+    var(--surface) 25%,
+    var(--card) 50%,
+    var(--surface) 75%
+  );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
